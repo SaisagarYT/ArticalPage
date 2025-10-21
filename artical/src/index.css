@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+/* :root{
+  
+} */
+:root {
+  --bg-background: white;
+  --bg-primary: rgb(216, 216, 216);
+  --text-main: black;
+  --text-secondary: #98989A;
+  --text-accent: #FFD11A;
+}
+
+[theme="dark"] {
+  --bg-background: black;
+  --bg-primary: #262626;
+  --text-main: white;
+  --text-secondary: #98989A;
+  --text-accent: #FFD11A;
+}
+
+
+
