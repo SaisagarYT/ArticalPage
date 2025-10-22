@@ -4,7 +4,7 @@ import Homepage from './screens/Homepage';
 import { useState } from 'react';
 
 const App = () => {
-  const [colors,setColors] = useState("dar");
+  const [colors,setColors] = useState(localStorage.getItem('color'));
   return (
     <div theme={colors} className='w-screen  overflow-x-hidden h-screen bg-(--bg-background) text-(--text-main)'>
       <div className='w-full py-2'>
