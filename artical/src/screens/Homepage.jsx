@@ -6,6 +6,8 @@ import HomepageFeatureCard from '../reusableComponents/HomepageFeatureCard'
 import HomepageCategories from '../JSON/HomepageCategories.jsx';
 import HomepageBlog from '../components/HomepageBlog.jsx'
 import HomepageButton from '../reusableComponents/HomepageButton.jsx'
+import HomepagePersons from '../reusableComponents/HomepagePersons.jsx'
+import HomepageBooks from '../reusableComponents/HomepageBooks.jsx'
 console.log(HomepageCategories);
 const Homepage = () => {
   const [tab,setTab] = useState("All");
@@ -38,19 +40,7 @@ const Homepage = () => {
           <div className='w-full relative overflow-hidden bg-black'>
             <img className='opacity-50' src={Webassets.lightSphere} alt="" />
             <div className='absolute bottom-1/8 left-1/5 bg-(--bg-background) shadow-xl px-10 py-5 rounded-2xl'>
-              <div className='w-full flex flex-col items-start gap-6'>
-                <div className='bg-(--bg-primary) flex items-center justify-center rounded-4xl overflow-hidden w-51 py-1'>
-                  <ul className='flex w-full translate-x-6 items-center justify-center'>
-                    <img className='' src={Webassets.person1} alt="" />
-                    <img className='-translate-x-4 z-10' src={Webassets.person1} alt="" />
-                    <img className='-translate-x-8 z-10' src={Webassets.person1} alt="" />
-                    <img className='-translate-x-12 z-10' src={Webassets.person1} alt="" />
-                  </ul>
-                </div>
-                <p className='text-2xl'>Explore 1000+ resources</p>
-                <p className='text-lg text-(--text-secondary)'>Over 1,000 articles on emerging tech trends and breakthroughs.</p>
-                <HomepageButton text="Explore Resources" icon={Webassets.arrowMark}/>
-              </div>
+              <HomepagePersons type="BTN"/>
             </div>
           </div>
         </div>
@@ -122,9 +112,34 @@ const Homepage = () => {
         </div>
         <HomepageButton text="View All Resources" icon={Webassets.arrowMark}/>
       </div>
-      <div className=''>
-
+      <HomepageBooks
+      title="Ebooks"
+      image={Webassets.icon1}
+      image2={Webassets.image1}
+      desc="Explore our collection of ebooks covering a wide spectrum of future technology topics."
+      text="Download Ebooks Now"
+      icon={Webassets.arrowMark}
+      title2="Variety of Topics"
+      desc2="Topics include AI in education (25%), renewable energy (20%), healthcare (15%), space exploration (25%), and biotechnology (15%)."
+      />
+      <HomepageBooks
+      title="Ebooks"
+      image={Webassets.icon1}
+      image2={Webassets.image1}
+      desc="Explore our collection of ebooks covering a wide spectrum of future technology topics."
+      text="Download Ebooks Now"
+      icon={Webassets.arrowMark}
+      title2="Variety of Topics"
+      desc2="Topics include AI in education (25%), renewable energy (20%), healthcare (15%), space exploration (25%), and biotechnology (15%)."
+      />
+      <div className='w-full bg-(--bg-primary) py-20 px-30 flex items-center gap-4 justify-between'>
+        <div className='flex flex-col gap-4 items-start'>
+          <p className='bg-(--text-button) py-2 px-4 rounded-sm'>What Our Readers Say</p>
+          <h1 className='text-6xl'>Real Words from Real Readers</h1>
+        </div>
+        <HomepageButton text="Testimonials" icon={Webassets.arrowMark}/>
       </div>
+      
     </section>
   )
 }

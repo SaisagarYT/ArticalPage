@@ -7,7 +7,9 @@ const Webassets = {
     icon2:"src/assets/Icon1.png",
     icon3:"src/assets/Icon2.png",
     icon4:"src/assets/icon3.png",
-    icon5:"src/assets/icon5.png"
+    icon5:"src/assets/icon5.png",
+    image1:"src/assets/Image (1).png",
+    image2:"src/assets/Image (2).png"
 }
 
 export default Webassets;
