@@ -8,6 +8,7 @@ import HomepageBlog from '../components/HomepageBlog.jsx'
 import HomepageButton from '../reusableComponents/HomepageButton.jsx'
 import HomepagePersons from '../reusableComponents/HomepagePersons.jsx'
 import HomepageBooks from '../reusableComponents/HomepageBooks.jsx'
+import HomepageTestimonials from '../reusableComponents/HomepageTestimonials.jsx'
 console.log(HomepageCategories);
 const Homepage = () => {
   const [tab,setTab] = useState("All");
@@ -125,7 +126,7 @@ const Homepage = () => {
       <HomepageBooks
       title="Ebooks"
       image={Webassets.icon1}
-      image2={Webassets.image1}
+      image2={Webassets.image2}
       desc="Explore our collection of ebooks covering a wide spectrum of future technology topics."
       text="Download Ebooks Now"
       icon={Webassets.arrowMark}
@@ -139,7 +140,94 @@ const Homepage = () => {
         </div>
         <HomepageButton text="Testimonials" icon={Webassets.arrowMark}/>
       </div>
-      
+      <div className='w-full py-4 px-4 justify-between grid grid-cols-3'>
+        <HomepageTestimonials
+        image={Webassets.person1}
+        userName="Saisagar"
+        address="Tadepalligudem,India"
+        review="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero maxime perspiciatis a natus modi aperiam quis."
+        />
+        <HomepageTestimonials
+        image={Webassets.person1}
+        userName="Saisagar"
+        address="Tadepalligudem,India"
+        review="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero maxime perspiciatis a natus modi aperiam quis."
+        />
+        <HomepageTestimonials
+        image={Webassets.person1}
+        userName="Saisagar"
+        address="Tadepalligudem,India"
+        review="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero maxime perspiciatis a natus modi aperiam quis."
+        />
+        <HomepageTestimonials
+        image={Webassets.person1}
+        userName="Saisagar"
+        address="Tadepalligudem,India"
+        review="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero maxime perspiciatis a natus modi aperiam quis."
+        />
+        <HomepageTestimonials
+        image={Webassets.person1}
+        userName="Saisagar"
+        address="Tadepalligudem,India"
+        review="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero maxime perspiciatis a natus modi aperiam quis."
+        />
+        <HomepageTestimonials
+        image={Webassets.person1}
+        userName="Saisagar"
+        address="Tadepalligudem,India"
+        review="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero maxime perspiciatis a natus modi aperiam quis."
+        />
+      </div>
+      <div className='w-full bg-(--bg-secondary) py-10 grid px-20 grid-cols-5'>
+        <ul className='text-(--text-secondary) flex flex-col gap-2'>
+          <h1 className='font-bold text-xl mb-3 text-(--text-main)'>Home</h1>
+          <li className='cursor-pointer'>Features</li>
+          <li className='cursor-pointer'>Blogs</li>
+          <li className='cursor-pointer'>Resources</li>
+          <li className='cursor-pointer'>Testimonials</li>
+          <li className='cursor-pointer'>Contact Us</li>
+          <li className='cursor-pointer'>Newsletter</li>
+        </ul>
+        <ul className='text-(--text-secondary) flex flex-col gap-2'>
+          <h1 className='font-bold text-xl mb-3 text-(--text-main)'>Home</h1>
+          <li className='cursor-pointer'>Features</li>
+          <li className='cursor-pointer'>Blogs</li>
+          <li className='cursor-pointer'>Resources</li>
+          <li className='cursor-pointer'>Testimonials</li>
+          <li className='cursor-pointer'>Contact Us</li>
+          <li className='cursor-pointer'>Newsletter</li>
+        </ul>
+        <ul className='text-(--text-secondary) flex flex-col gap-2'>
+          <h1 className='font-bold text-xl mb-3 text-(--text-main)'>Home</h1>
+          <li className='cursor-pointer'>Features</li>
+          <li className='cursor-pointer'>Blogs</li>
+          <li className='cursor-pointer'>Resources</li>
+          <li className='cursor-pointer'>Testimonials</li>
+          <li className='cursor-pointer'>Contact Us</li>
+          <li className='cursor-pointer'>Newsletter</li>
+        </ul>
+        <ul className='text-(--text-secondary) flex flex-col gap-2'>
+          <h1 className='font-bold text-xl mb-3 text-(--text-main)'>Home</h1>
+          <li className='cursor-pointer'>Features</li>
+          <li className='cursor-pointer'>Blogs</li>
+          <li className='cursor-pointer'>Resources</li>
+          <li className='cursor-pointer'>Testimonials</li>
+          <li className='cursor-pointer'>Contact Us</li>
+          <li className='cursor-pointer'>Newsletter</li>
+        </ul>
+        <ul className='text-(--text-secondary) flex flex-col gap-2'>
+          <h1 className='font-bold text-xl mb-3 text-(--text-main)'>Home</h1>
+          <li className='cursor-pointer'>Features</li>
+          <li className='cursor-pointer'>Blogs</li>
+          <li className='cursor-pointer'>Resources</li>
+          <li className='cursor-pointer'>Testimonials</li>
+          <li className='cursor-pointer'>Contact Us</li>
+          <li className='cursor-pointer'>Newsletter</li>
+        </ul>
+      </div>
+      <div className=''>
+
+      </div>
     </section>
   )
 }
